@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c53c2fc3-bd2f-4bc3-920c-11ad34acb69d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loanapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/loanapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/table.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,19 @@
       <option name="presentableId" value="Default" />
       <updated>1583356576062</updated>
     </task>
+    <task id="LOCAL-00001" summary="jinja child block working">
+      <created>1583491377956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583491377956</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jinja child block working" />
+    <option name="LAST_COMMIT_MESSAGE" value="jinja child block working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1583491375876">
@@ -101,22 +111,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583357471444" />
-    <state width="1345" height="139" key="GridCell.Tab.0.bottom" timestamp="1583491330751">
+    <state width="1345" height="139" key="GridCell.Tab.0.bottom" timestamp="1583519121593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583491330751" />
-    <state width="1345" height="139" key="GridCell.Tab.0.center" timestamp="1583491330751">
+    <state width="1345" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583519121593" />
+    <state width="1345" height="139" key="GridCell.Tab.0.center" timestamp="1583519121593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583491330751" />
-    <state width="1345" height="139" key="GridCell.Tab.0.left" timestamp="1583491330750">
+    <state width="1345" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583519121593" />
+    <state width="1345" height="139" key="GridCell.Tab.0.left" timestamp="1583519121593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583491330750" />
-    <state width="1345" height="139" key="GridCell.Tab.0.right" timestamp="1583491330751">
+    <state width="1345" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583519121593" />
+    <state width="1345" height="139" key="GridCell.Tab.0.right" timestamp="1583519121593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583491330751" />
+    <state width="1345" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583519121593" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1583475374327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -25,6 +25,12 @@ class MyForm(Form):
 def calculator():
     name = 'Timon'
     form = MyForm()
+    #data = request.get_data()
+    #print(request.data)
+    if request.method == 'POST':
+        print(request.form.get('loan_amount'))
+        print(request.form.get('rate'))
+        print(request.form.get('loan_period'))
 
     return render_template('table.html', table="text", form=form)
 
