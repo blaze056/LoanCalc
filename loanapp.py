@@ -3,10 +3,10 @@
 ###############################
 
 from flask import Flask, render_template, request, flash
-from wtforms import Form, TextField, StringField, SubmitField, TextAreaField, validators
+from wtforms import Form, TextField, StringField, IntegerField, SubmitField, TextAreaField, validators
 from flask_wtf import FlaskForm
 from flask_bootstrap import Bootstrap
-from wtforms.validators import Required
+from wtforms.validators import Required, DataRequired
 
 
 # Configuration details
@@ -14,25 +14,20 @@ app = Flask(__name__)
 #DEBUG = True
 app.config['SECRET_KEY'] = 'secretkey@#)(*&^nomess/'
 
-# class MyForm(Form):
-#     name = TextField('Name:', validators=[validators.required()])
+class MyForm(Form):
+    loan_amount = IntegerField('Loan Amount', validators=[DataRequired()])
+    rate = IntegerField('Rate of Interest', validators=[DataRequired()])
+    loan_period = IntegerField('Loan Period (months)', validators=[DataRequired()])
+    submit = SubmitField('Calculate')
 
 '''''edit >>'''
 @app.route("/", methods=['GET', 'POST'])
-def hello():
+def calculator():
     name = 'Timon'
-    #'''  form = MyForm() '''
-    #return
-     # <html>
-     #     <head>
-     #         <title>Home Page - Microblog</title>
-     #     </head>
-     #     <body>
-     #         <h1>Hello, ''' + user['username'] + '''!</h1>
-     #     </body>
-     # </html>'''
+    form = MyForm()
 
-    return render_template('hello.html', name=name)
+    return render_template('table.html', table="text", form=form)
+
 
 '''''<<<edit '''
 
