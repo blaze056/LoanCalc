@@ -1,0 +1,21 @@
+{% block content %}
+    <h1>Loan Payment Calculator</h1>
+    <form action="" method="post" novalidate>
+        <p>
+            {{ form.loan_amount.label }}<br>
+            {{ form.loan_amount(size=32) }}
+        </p>
+        <p>
+            {{ form.rate.label }}<br>
+            {{ form.rate(size=32) }}
+        </p>
+        <p>
+            {{ form.loan_period.label }}<br>
+            {{ form.loan_period(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% block table %}
+{% endblock %}
+
+{% endblock %}
