@@ -27,9 +27,9 @@ def calculator():
     #print(request.data)
     table = []
     if request.method == 'POST':
-        loan_amount = request.form.get('loan_amount')
-        rate = request.form.get('rate')
-        loan_period = request.form.get('loan_period')
+        loan_amount = int(request.form.get('loan_amount'))
+        rate = int(request.form.get('rate'))
+        loan_period = int(request.form.get('loan_period'))
         table = calc(loan_amount,rate,loan_period)
     return render_template('table.html', table=table, form=form)
 

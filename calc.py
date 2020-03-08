@@ -4,9 +4,9 @@ import math
 def calc(loan_amount,rate,loan_period):
 
     Res = []
-    loan_amount = 100000
-    rate = 5
-    loan_period = 36
+    #loan_amount = 100000
+    #rate = 5
+    #loan_period = 36
 
     RN = ((rate/12)/100)    #print(RN)
 
@@ -32,10 +32,11 @@ def calc(loan_amount,rate,loan_period):
 
 
         table.append([])
-        table[i].append(P[i])
-        table[i].append(PP[i])
-        table[i].append(INT[i])
-        table[i].append(OB[i])
+        if i != 0:
+            table[i].append(P[i])
+            table[i].append(PP[i])
+            table[i].append(INT[i])
+            table[i].append(OB[i])
 
         i += 1
 
