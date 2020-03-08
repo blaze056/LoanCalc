@@ -38,8 +38,6 @@ def calc(loan_amount,rate,loan_period):
         table[i].append(OB[i])
 
         i += 1
-    #print(P)
-    #print(PP)
-    #print(INT)
-    #print(OB)
-    print(table)
+
+    #print(table)
+    return(table)

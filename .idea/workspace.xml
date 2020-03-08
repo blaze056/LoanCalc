@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c53c2fc3-bd2f-4bc3-920c-11ad34acb69d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/calc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loanapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/loanapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/temp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/miniapp" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.temp">
+  <component name="RunManager" selected="Python.loanapp">
     <configuration name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LoanCalc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.loanapp" />
         <item itemvalue="Python.temp" />
         <item itemvalue="Python.calc" />
-        <item itemvalue="Python.loanapp" />
         <item itemvalue="Python.miniapp" />
       </list>
     </recent_temporary>
@@ -165,22 +163,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583357471444" />
-    <state width="1345" height="139" key="GridCell.Tab.0.bottom" timestamp="1583678087262">
+    <state width="1345" height="139" key="GridCell.Tab.0.bottom" timestamp="1583678535349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583678087262" />
-    <state width="1345" height="139" key="GridCell.Tab.0.center" timestamp="1583678087262">
+    <state width="1345" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583678535349" />
+    <state width="1345" height="139" key="GridCell.Tab.0.center" timestamp="1583678535349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583678087262" />
-    <state width="1345" height="139" key="GridCell.Tab.0.left" timestamp="1583678087261">
+    <state width="1345" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583678535349" />
+    <state width="1345" height="139" key="GridCell.Tab.0.left" timestamp="1583678535349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583678087261" />
-    <state width="1345" height="139" key="GridCell.Tab.0.right" timestamp="1583678087262">
+    <state width="1345" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583678535349" />
+    <state width="1345" height="139" key="GridCell.Tab.0.right" timestamp="1583678535349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583678087262" />
+    <state width="1345" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583678535349" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583675829397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
