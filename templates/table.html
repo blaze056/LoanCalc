@@ -2,5 +2,14 @@
 
 
 {% block table %}
-     The output you'll see is: {{ table }}
+<table>
+{% for item in table %}
+<TR>
+   <TD>{{item[0]}}</TD>
+   <TD>{{item[1]}}</TD>
+   <TD>{{item[2]}}</TD>
+   <TD>{{item[3]}}</TD>
+</TR>
+{% endfor %}
+</table>
 {% endblock %}
