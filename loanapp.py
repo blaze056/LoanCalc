@@ -23,17 +23,16 @@ class MyForm(Form):
 '''''edit >>'''
 @app.route("/", methods=['GET', 'POST'])
 def calculator():
-    name = 'Timon'
     form = MyForm()
     #data = request.get_data()
     #print(request.data)
+    table = 0
     if request.method == 'POST':
-        print(request.form.get('loan_amount'))
-        print(request.form.get('rate'))
-        print(request.form.get('loan_period'))
-
-    return render_template('table.html', table="text", form=form)
-
+        loan_amount = request.form.get('loan_amount')
+        rate = request.form.get('rate')
+        loan_period = request.form.get('loan_period')
+        table = loan_amount + rate
+    return render_template('table.html', table=table, form=form)
 
 '''''<<<edit '''
 
