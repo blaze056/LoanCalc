@@ -33,6 +33,7 @@ def calc(loan_amount,rate,loan_period):
 
         table.append([])
         if i != 0:
+            table[i].append(i)
             table[i].append(P[i])
             table[i].append(PP[i])
             table[i].append(INT[i])
