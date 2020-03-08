@@ -2,12 +2,15 @@
 
 {% block table %}
 <table align = "center">
+{% if table != [] %}
 <TR bgcolor="#9ac0cd">
    <TD><strong>Payment Amount</strong></TD>
    <TD><strong>Principal Amount</strong></TD>
    <TD><strong>Interest Amount</strong></TD>
    <TD><strong>Outstanding Balance</strong></TD>
 <TR>
+{% endif %}
+
 {% for row in table %}
 <TR>
    <TD>{{row[0]}}</TD>
