@@ -9,35 +9,70 @@ table {
 th, td {
   text-align: center;
   padding: 8px;
+  font-family: Arial; font-size: 10pt;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+form {
+  margin: 0 auto;
+  width: 580px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 2em;
+  background-color: #E3ECEA;
+  font-family: Arial; font-size: 10pt;
+}
+ul {
+  list-style: none;
+}
+label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+textarea {}
+input {
+}
+
 </style>
 </head>
 
-    <h1 class="title">Loan Payment Calculator</h1>
+    <h1 class="title" align="center" style="font-family:arial;color:#528b8b">Loan Payment Calculator</h1>
     <form action="" method="post" novalidate>
-        <p>
-            {{ form.loan_amount.label }}<br>
+        <p align = "center">
+            <ul>
+            <li>
+            {{ form.loan_amount.label }} &nbsp
             {{ form.loan_amount(size=32) }}
             {% for er in form.loan_amount.errors %}
             <span style="color: red;">[{{ er }}]</span>
             {% endfor %}
+            </li>
+            </ul>
         </p>
-        <p>
-            {{ form.rate.label }}<br>
+        <p align = "center">
+            <ul>
+            <li>
+            {{ form.rate.label }} &nbsp
             {{ form.rate(size=32) }}
             {% for er in form.rate.errors %}
             <span style="color: red;">[{{ er }}]</span>
             {% endfor %}
+            </li>
+            </ul>
         </p>
-        <p>
-            {{ form.loan_period.label }}<br>
+        <p align = "center">
+            <ul>
+            <li>
+            {{ form.loan_period.label }} &nbsp
             {{ form.loan_period(size=32) }}
             {% for er in form.loan_period.errors %}
             <span style="color: red;">[{{ er }}]</span>
             {% endfor %}
+            </li>
+            </ul>
         </p>
-        <p>{{ form.submit() }}</p>
+        <p align = "center">{{ form.submit() }}</p>
     </form>
 <hr>
 {% block table %}
