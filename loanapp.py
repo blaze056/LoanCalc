@@ -25,7 +25,7 @@ def calculator():
     form = MyForm()
     #data = request.get_data()
     #print(request.data)
-    table = 0
+    table = []
     if request.method == 'POST':
         loan_amount = request.form.get('loan_amount')
         rate = request.form.get('rate')
