@@ -19,14 +19,23 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <p>
             {{ form.loan_amount.label }}<br>
             {{ form.loan_amount(size=32) }}
+            {% for er in form.loan_amount.errors %}
+            <span style="color: red;">[{{ er }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.rate.label }}<br>
             {{ form.rate(size=32) }}
+            {% for er in form.rate.errors %}
+            <span style="color: red;">[{{ er }}]</span>
+            {% endfor %}
         </p>
         <p>
             {{ form.loan_period.label }}<br>
             {{ form.loan_period(size=32) }}
+            {% for er in form.loan_period.errors %}
+            <span style="color: red;">[{{ er }}]</span>
+            {% endfor %}
         </p>
         <p>{{ form.submit() }}</p>
     </form>

@@ -13,27 +13,28 @@ app = Flask(__name__)
 #DEBUG = True
 app.config['SECRET_KEY'] = 'secretkey@#)(*&^nomess/'
 
-class MyForm(Form):
-    loan_amount = IntegerField('Loan Amount', validators=[DataRequired()])
-    rate = IntegerField('Rate of Interest', validators=[DataRequired()])
-    loan_period = IntegerField('Loan Period (months)', validators=[DataRequired()])
+class MyForm(FlaskForm):
+    loan_amount = IntegerField('Loan Amount', [validators.DataRequired(message=("Field cannot be empty"))])
+    rate = IntegerField('Rate of Interest', [validators.DataRequired(message=("Field cannot be empty"))])
+    loan_period = IntegerField('Loan Period (months)', [validators.DataRequired(message=("Field cannot be empty"))])
     submit = SubmitField('Calculate')
 
-'''''edit >>'''
 @app.route("/", methods=['GET', 'POST'])
 def calculator():
     form = MyForm()
     #data = request.get_data()
     #print(request.data)
     table = []
+
+    if form.validate_on_submit():
+        return redirect('/')
+
     if request.method == 'POST':
         loan_amount = int(request.form.get('loan_amount'))
         rate = int(request.form.get('rate'))
         loan_period = int(request.form.get('loan_period'))
-        table = calc(loan_amount,rate,loan_period)
+        table = calc(loan_amount, rate, loan_period)
     return render_template('table.html', table=table, form=form)
-
-'''''<<<edit '''
 
 
 if __name__ == "__main__":
